@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#dff6ff, #f7fff3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.garden-card {
+    background: white;
+    width: 380px;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.08);
+}
+
+.eyebrow {
+    color: #4caf50;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #2f5d3a;
+}
+
+.message {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.plant {
+    font-size: 5rem;
+    margin-bottom: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.level-text {
+    margin-bottom: 25px;
+    color: #4d7d59;
+    font-weight: bold;
+}
+
+button {
+    background: #71c96f;
+    color: white;
+
+    border: none;
+    border-radius: 999px;
+
+    padding: 14px 30px;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #5fb65d;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.counter {
+    margin-top: 25px;
+    color: #777;
+}
