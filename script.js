@@ -3,12 +3,14 @@ const waterButton = document.getElementById("waterButton");
 const waterCount = document.getElementById("waterCount");
 const levelText = document.getElementById("levelText");
 
-let count = 0;
+let count = Number(localStorage.getItem("waterCount")) || 0;
 
+waterCount.textContent = count;
 waterButton.addEventListener("click", () => {
     count++;
 
     waterCount.textContent = count;
+    localStorage.setItem("waterCount", count);
 
     if (count < 5) {
         plant.textContent = "🌱";
